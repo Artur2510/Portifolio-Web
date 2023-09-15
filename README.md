@@ -1,2 +1,2 @@
 # Portfolio-Web
-Portifolio criado para ficar disponível na web
+Portfolio criado para ficar disponível na web
