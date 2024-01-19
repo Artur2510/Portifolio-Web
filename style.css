@@ -1,0 +1,40 @@
+.header-container{
+  /* border: solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(220, 220, 220);
+}
+
+.header-container .img-header {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 70%;
+  margin-top: 5px;
+}
+.header-container .links-header {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: space-around;
+  margin-left: 60%;
+  align-items: center;
+  width: 20%;
+  font-family: monts;
+  color: black;
+}
+
+.header-container .network {
+  /* border: solid green; */
+  margin-left: 20px;
+  width: 14%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-container .links-header a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
