@@ -1,6 +1,6 @@
 function Tecnologies() {
     return(
-      <div className="class-tecnologies">
+      <section  id='sectionTecnologias' className="class-tecnologies">
         <h2>TECNOLOGIAS</h2>
         <div className="Hard-skills">
         <h3>Hard Skills</h3>
@@ -77,7 +77,7 @@ function Tecnologies() {
             </li>
         </ul>
         </div>
-      </div>
+      </section>
     )
   };
   
