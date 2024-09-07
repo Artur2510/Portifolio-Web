@@ -1,9 +1,10 @@
 function Projects() {
     return(
-      <div className="class-projects">
+      <section id='sectionProjetos' className="class-projects">
         <h2>PROJETOS</h2>
         <p>ELABORAR COMO COLOCAR OS PROJETOS AQUI</p>
-      </div>
+        <p>COLOCAR 4 PROJETOS CURSO E 4 PESSOAS QUE N TENHO AINDA</p>
+      </section>
     )
   };
   

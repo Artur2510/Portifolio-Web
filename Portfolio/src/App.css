@@ -1,0 +1,15 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ocupa a largura e altura total da página */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Previne rolagem horizontal indesejada */
+  }
+
+  /* MODIFICAÇÕES FEITA PARA A PAGINA OCUPAR TODO O ESPAÇÃO DISPONIVEL PELO NAVEGADOR */

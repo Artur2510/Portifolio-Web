@@ -1,8 +1,9 @@
-import About from "./components/About"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Projects from "./components/Projects"
-import Tecnologies from "./components/Tecnologies"
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import Tecnologies from "./components/Tecnologies";
+import Formacao from "./components/Formacao";
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
     <>
       <Header />
       <About />
-      <Projects />
       <Tecnologies />
+      <Projects />
+      <Formacao />
       <Footer />
     </>
   )
