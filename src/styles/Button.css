@@ -1,0 +1,28 @@
+.class-button {
+    background-color: #61dafb; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse em forma de mão */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s; /* Transição suave para hover */
+    /* margin-left: 40; */
+  }
+  
+  .class-button a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto dentro do link */
+  }
+  
+  .class-button:hover {
+    background-color: #21a1f1; /* Cor do botão ao passar o mouse */
+  }
+
+  .class-logo-linkedin {
+    width: 20px;
+  }
+  

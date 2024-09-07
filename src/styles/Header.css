@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura e altura */
+}
+
+.class-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #282c34;
+    padding: 1em;
+    display: flex;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Define o fundo do header e o espaçamento ao redor. */
+  
+  .class-links nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* Estiliza os links de navegação, incluindo margens, tamanho da fonte e cor. */
+  
+  .class-links nav a:hover {
+    color: #61dafb;
+    transition: color 0.3s;
+    font-size: 21px;
+  }
+
+  /* Define a cor do link quando o usuário passa o mouse por cima, com uma transição suave. */
+
+  section {
+    height: 100vh; /* Faz com que cada seção ocupe a altura total da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
