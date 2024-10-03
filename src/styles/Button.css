@@ -16,6 +16,9 @@
   .class-button a {
     text-decoration: none; /* Remove o sublinhado do link */
     color: white; /* Cor do texto dentro do link */
+    display: flex; /* Mantém o texto e a imagem alinhados */
+    align-items: center; /* Garante o alinhamento vertical */
+    gap: 10px; /* Espaçamento entre a imagem e o texto */
   }
   
   .class-button:hover {
@@ -24,5 +27,10 @@
 
   .class-logo-linkedin {
     width: 20px;
+  }
+
+  .linkedin-text {
+    font-weight: bold; /* Negrito para o texto Linkedin */
+    vertical-align: middle;
   }
   

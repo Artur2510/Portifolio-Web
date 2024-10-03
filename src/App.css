@@ -13,3 +13,14 @@
   }
 
   /* MODIFICAÇÕES FEITA PARA A PAGINA OCUPAR TODO O ESPAÇÃO DISPONIVEL PELO NAVEGADOR */
+
+  @media (max-width: 768px) {
+    /* Ajustes globais para telas menores */
+    body {
+      font-size: 16px;
+    }
+  
+    html, body {
+      overflow-x: hidden; /* Previne rolagem horizontal */
+    }
+  }

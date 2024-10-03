@@ -41,3 +41,41 @@
     align-items: center;
   }
   
+  /* Media query para telas menores, como smartphones */
+@media (max-width: 768px) {
+  .class-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .class-links nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .class-links nav a {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .class-button {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Media query para telas muito pequenas */
+@media (max-width: 480px) {
+  .class-links nav a {
+    font-size: 14px;
+  }
+
+  .class-button {
+    margin-top: 1.5em;
+  }
+}
