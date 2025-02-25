@@ -9,6 +9,10 @@
   align-items: center; /* Centraliza horizontalmente */
 }
 
+.class-tecnologies {
+  font-size: 25px;
+}
+
 .skill-title {
   font-size: 2rem;
   font-weight: bold;
