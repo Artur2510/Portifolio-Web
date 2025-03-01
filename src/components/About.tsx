@@ -1,18 +1,22 @@
 import '../styles/About.css';
 
 function About() {
-    return(
-      <section id='sectionSobre' className="class-about">
-        <div className='class-div1'>
-        <h2>SOBRE MIM</h2>
+  return (
+    <section id="sectionSobre" className="about">
+      <div className="about-left">
+        <h2>Sobre</h2>
         <img src="/imagens/dev-img.jpeg" alt="Um Mini Dev Codando" />
-        </div>
-        <div className='class-div2'>
-        <p>Sou um Desenvolvedor Web Front-End Junior em formação contínua pela Trybe, com experiência prática em HTML, CSS, JavaScript e React. Apaixonado por criar interfaces de usuário eficientes e acessíveis, já desenvolvi diversos projetos que simulam cenários reais do mercado. Tenho familiaridade com metodologias ágeis e versionamento de código usando Git. Estou sempre disposto a aprender novas tecnologias e contribuir em equipes de alta performance.</p>
-        <p>Além disso, sou formado em Engenharia Mecânica, onde desenvolvi raciocínio lógico, análise de dados e a habilidade de resolver problemas complexos. Essas competências, combinadas com minha formação em tecnologia, me permitem abordar desafios de forma estruturada e eficiente, trazendo um diferencial analítico para a área de desenvolvimento web.</p>
-        </div>
-      </section>
-    )
-  };
-  
-  export default About;
+      </div>
+      <div className="about-right">
+        <p>
+          Sou um Desenvolvedor Web Full Stack em transição de carreira, com formação pela Trybe e experiência prática em HTML, CSS, JavaScript, TypeScript, React, Node.js e bancos de dados. Minha trajetória na Engenharia Mecânica me proporcionou um forte raciocínio lógico, análise de dados e habilidades para resolver problemas complexos – competências que aplico no desenvolvimento de soluções eficientes e escaláveis.
+        </p>
+        <p>
+          Tenho experiência com metodologias ágeis, versionamento de código com Git e já desenvolvi diversos projetos práticos que simulam desafios reais do mercado. Busco uma oportunidade como Desenvolvedor Júnior para aplicar meus conhecimentos, aprimorar minhas habilidades e contribuir ativamente para o crescimento da equipe e da empresa. Sou motivado pelo aprendizado contínuo e entusiasmado para enfrentar novos desafios na área de tecnologia.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export default About;
