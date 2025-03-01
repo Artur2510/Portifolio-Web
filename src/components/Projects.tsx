@@ -1,11 +1,43 @@
+import { useState } from 'react';
+import { projectsData } from '../data/projectsData';
+import '../styles/Projects.css';
+import { Project } from '../types/types';
+
 function Projects() {
-    return(
-      <section id='sectionProjetos' className="class-projects">
-        <h2>PROJETOS</h2>
-        <p>ELABORAR COMO COLOCAR OS PROJETOS AQUI</p>
-        <p>COLOCAR 4 PROJETOS CURSO E 4 PESSOAS QUE N TENHO AINDA</p>
-      </section>
-    )
+  const [activeProject, setActiveProject] = useState<Project | null>(null);
+
+  const handleProjectClick = (project: Project) => {
+    setActiveProject(project);
   };
-  
-  export default Projects;
+
+  const handleBackClick = () => {
+    setActiveProject(null);
+  };
+
+  return (
+    <section id='sectionProjetos' className='class-projects'>
+      {!activeProject ? (
+        <>
+          <h2 className='projects-title'>Projetos</h2>
+          <div className='projects-grid'>
+            {projectsData.map((project) => (
+              <div key={project.id} className='project-item' onClick={() => handleProjectClick(project)}>
+                <img src={project.image} alt={project.name} className='project-image' />
+                <p className='project-name'>{project.name}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <h2 className='project-title'>{activeProject.name}</h2>
+          <p className='project-description'>{activeProject.description}</p>
+          <a href={activeProject.githubLink} target='_blank' rel='noopener noreferrer' className='github-button'>Ver no GitHub</a>
+          <button className='back-button' onClick={handleBackClick}>Voltar</button>
+        </>
+      )}
+    </section>
+  );
+}
+
+export default Projects;

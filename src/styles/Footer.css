@@ -1,0 +1,24 @@
+.class-footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .class-footer h4 {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+  

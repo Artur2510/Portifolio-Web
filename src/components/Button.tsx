@@ -1,15 +1,21 @@
-import '../styles/Button.css'
+import '../styles/Button.css';
 
-function Button() {
-  return(
-    <button className='class-button'>
-     
-      <a href="https://www.linkedin.com/in/artur-bicalho/" target="_blank">
-        <img className='class-logo-linkedin' src="/imagens/logo-linkedin.png" alt="Logo do linkedin" />
-        <span className='Linkedin-text'>Linkedin</span>
+interface ButtonProps {
+  href: string;
+  imgSrc: string;
+  altText: string;
+  text: string;
+}
+
+function Button({ href, imgSrc, altText, text }: ButtonProps) {
+  return (
+    <button className="class-button">
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        <img className="button-icon" src={imgSrc} alt={altText} />
+        <span className="button-text">{text}</span>
       </a>
-      </button>
-  )
-};
+    </button>
+  );
+}
 
 export default Button;
