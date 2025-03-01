@@ -1,81 +1,119 @@
-* {
-  box-sizing: border-box; /* Garante que o padding seja incluído no cálculo da largura e altura */
+/* Garante que o header tenha um fundo fixo e um layout flexível */
+.class-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
-.class-header {
+/* Coloca o botão de menu no canto direito */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: auto; /* Empurra o botão para a direita */
+}
+
+/* Resto do código para o botão de menu */
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+nav {
+  display: flex;
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: font-size 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  color: #61dafb;
+  font-size: 21px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Torna o botão de menu visível em telas pequenas */
+  }
+
+  nav {
+    display: none; /* Esconde o menu por padrão */
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: #282c34;
-    padding: 1em;
-    display: flex;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Define o fundo do header e o espaçamento ao redor. */
-  
-  .class-links nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-
-  /* Estiliza os links de navegação, incluindo margens, tamanho da fonte e cor. */
-  
-  .class-links nav a:hover {
-    color: #61dafb;
-    transition: color 0.3s;
-    font-size: 21px;
-  }
-
-  /* Define a cor do link quando o usuário passa o mouse por cima, com uma transição suave. */
-
-  section {
-    height: 100vh; /* Faz com que cada seção ocupe a altura total da tela */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Media query para telas menores, como smartphones */
-@media (max-width: 768px) {
-  .class-header {
+    width: 60vw; /* Largura relativa: ocupa 60% da largura da tela */
+    height: 100%;
+    padding: 2em 1em;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1em;
+    z-index: 999; /* Coloca o menu acima de outros elementos */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra discreta */
+    transition: transform 0.3s ease-in-out;
   }
 
-  .class-links nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  nav.active {
+    display: flex; /* Exibe o menu quando estiver ativo */
+    transform: translateX(0); /* Garante que o menu deslize para a tela */
   }
 
-  .class-links nav a {
-    margin: 10px 0;
+  nav a {
     font-size: 16px;
+    margin: 15px 0;
     text-align: left;
   }
 
-  .class-button {
-    margin-top: 1em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .hamburger {
+    background-color: white;
+  }
+
+  /* Sobreposição para o fundo */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Inicialmente invisível */
+    z-index: 998; /* Fica atrás do menu */
+  }
+
+  .overlay.active {
+    display: block; /* Aparece quando o menu estiver ativo */
   }
 }
 
-/* Media query para telas muito pequenas */
 @media (max-width: 480px) {
-  .class-links nav a {
-    font-size: 14px;
+  .menu-toggle {
+    width: 25px;
+    height: 25px;
   }
 
-  .class-button {
-    margin-top: 1.5em;
+  .hamburger {
+    width: 20px;
+    height: 2px;
   }
 }
