@@ -8,8 +8,11 @@
   /* Ocupa a largura e altura total da página */
   html, body {
     width: 100%;
+    margin: 0;
+    padding: 0; 
     height: 100%;
     overflow-x: hidden; /* Previne rolagem horizontal indesejada */
+    box-sizing: border-box;
   }
 
   /* MODIFICAÇÕES FEITA PARA A PAGINA OCUPAR TODO O ESPAÇÃO DISPONIVEL PELO NAVEGADOR */
