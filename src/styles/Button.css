@@ -1,36 +1,34 @@
 .class-button {
-    background-color: #61dafb; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda padrão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor do mouse em forma de mão */
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s; /* Transição suave para hover */
-    /* margin-left: 40; */
-  }
-  
-  .class-button a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: white; /* Cor do texto dentro do link */
-    display: flex; /* Mantém o texto e a imagem alinhados */
-    align-items: center; /* Garante o alinhamento vertical */
-    gap: 10px; /* Espaçamento entre a imagem e o texto */
-  }
-  
-  .class-button:hover {
-    background-color: #21a1f1; /* Cor do botão ao passar o mouse */
-  }
+  background-color: #61dafb; /* Cor de fundo */
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Reduzi um pouco o padding */
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduzi o espaço entre ícone e texto */
+  transition: background-color 0.3s;
+  height: 40px; /* Define uma altura fixa para os botões */
+  min-width: 120px; /* Define um tamanho mínimo */
+  max-width: 160px; /* Limita o tamanho máximo */
+  justify-content: center; /* Centraliza os itens */
+}
 
-  .class-logo-linkedin {
-    width: 20px;
-  }
+/* Define o tamanho máximo para os ícones */
+.button-icon {
+  width: 20px;
+  height: 20px;
+}
 
-  .linkedin-text {
-    font-weight: bold; /* Negrito para o texto Linkedin */
-    vertical-align: middle;
-  }
-  
+/* Mantém o texto alinhado corretamente */
+.button-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Efeito ao passar o mouse */
+.class-button:hover {
+  background-color: #21a1f1;
+}

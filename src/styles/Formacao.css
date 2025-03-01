@@ -1,0 +1,61 @@
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .formacao-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .formacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .formacao-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .formacao-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .formacao-degree {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .formacao-institution {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .formacao-year {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .formacao-description {
+    margin-top: 10px;
+    color: #444;
+  }
+  
